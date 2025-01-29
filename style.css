@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Silkscreen:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe6c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+img {
+  width: 80%;
+  max-width: 300px;
+  object-fit: contain;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+#text {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  color: #fa8f89;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  font-size: 1rem;
+  padding: 14px 80px;
+  background-color: #ffa09b;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff8781;
+  transform: scale(1.05);
+}
+
+#no {
+  position: relative;
+}
+
+a {
+  margin-top: 10vw;
+  font-family: "Poppins", sans-serif;
+  color: #fa8f89;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  img {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  #text {
+    font-size: 2rem;
+  }
+
+  button {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    padding: 14px 60px;
+  }
+
+  a{
+    marg
+  }
+}
+
+/* Love animation background */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
